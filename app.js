@@ -28,5 +28,9 @@ function validation(){
         document.getElementById("result").innerHTML="password does 'nt  matched*"
         return false;
     }
-    
+    else if(document.formfill.Password.value == document.formfill.CPassword.value){
+       popup.classList.add("open-Slide")
+        return false;
+    }
 }
+var popup=document.getElementById('popup');

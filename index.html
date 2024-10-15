@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="app.js" defer></script>
     <title>Register</title>
 </head>
@@ -14,11 +15,11 @@
   
     <div class="container">
       <div class="form-box">
-        <form action="" name="formfill" onsubmit="return validation()" >
+        <form action="" name="formfill" onsubmit="return validation()">
        <h2>Resgister</h2>
-       <p id="result">head</p>
+       <p id="result"></p>
        <div class="input-box">
-         <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user"></i>
           <input type="text" name="username"placeholder="username">
        </div>
        <div class="input-box">
@@ -35,20 +36,15 @@
         
      </div>
      <div class="button">
-        <input type="submit" class="btn" value="Register">
+        <input type="submit" class="btn" onclick="validation()" value="Register">
      </div>
        <div class="group">
         <span><a href="#">Forget-password</a></span>
-        <span><a href="#">Login</a></span>
+        <span><a href="#">Login</a></span>  
        </div>
      </form>
      </div>
-     <div class="popup" id="popup">
-      <i class="fa-light fa-circle-check"></i>
-       <h1>Thank you!</h1>
-       <p>your  were Registration sucessfully thanks!</p>
-       <a href="#"><button>OK</button></a>
-     </div>
+     
       </div>
        
    
